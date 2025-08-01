@@ -57,3 +57,11 @@ img{
 .demos:hover{
     background-color: #157e2c;
 }
+input:focus{
+    font-size: 700px;
+    color: #1100f8;
+    font-size: 20px;
+}
+ol:last-child{
+    background-color: red;
+}
