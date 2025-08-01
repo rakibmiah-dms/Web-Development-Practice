@@ -56,5 +56,5 @@ img{
     }
 .demos:hover{
     background-color: #14581d;
-    color: white;
+    color: white !important;
 }
