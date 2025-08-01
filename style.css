@@ -65,6 +65,8 @@ input:focus{
 li:first-child{
     background-color: red;
 }
-li::after{
-    content: " Current"; 
+.current-job::after{
+    content: " Current";
+    font-size: small;
+    color: #045d74;
 }
