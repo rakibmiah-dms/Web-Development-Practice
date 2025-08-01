@@ -70,3 +70,9 @@ li:first-child{
     font-size: small;
     color: #045d74;
 }
+#message-icon{
+background-color: #181818;
+    width: 5%;
+    height: 40px;
+    position: absolute;
+}
