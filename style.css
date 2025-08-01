@@ -70,3 +70,8 @@ li:first-child{
     font-size: small;
     color: #045d74;
 }
+#current-job{
+    content: " Current";
+    font-size: small;
+    color: #045d74;  
+}
