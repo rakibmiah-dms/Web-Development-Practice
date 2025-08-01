@@ -55,6 +55,5 @@ img{
     display: inline-block;
     }
 .demos:hover{
-    background-color: #14581d;
-    color: white !important;
+    background-color: #caba2a;
 }
