@@ -18,3 +18,32 @@
     padding: 9px 25px;
     cursor: pointer;
 }
+.cat1{
+    background-color: orange;
+}
+.cat2{
+    background-color: #ff136f;
+}
+.cat3{
+    background-color: aqua;
+}
+.cat1, .cat2, .cat3{
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.categories h1{
+    color: white;
+}
+.card{
+    border: none;
+    box-shadow: 5px 5px 10px lightblue;
+}
+#contact{
+    height: 300px;
+}
+#contact h6{
+    color: gray;
+}
+footer{
+    text-align: center;
+}
