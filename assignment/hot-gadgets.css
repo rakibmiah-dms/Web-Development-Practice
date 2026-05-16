@@ -125,3 +125,7 @@ body{
 .sub-item1{
     margin-bottom: 30px;
 }
+.carousel-align{
+    align-items: center;
+    padding-left: 20px 40px;
+}
