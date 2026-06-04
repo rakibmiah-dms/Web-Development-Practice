@@ -32,6 +32,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 .card-header a{
     text-decoration: none;
@@ -128,4 +129,10 @@ body{
 .carousel-align{
     align-items: center;
     padding-left: 20px 40px;
+}
+.carousel-bg{
+    background-image: url(Images/hot-gadgets/bg-1.png), url(Images/hot-gadgets/bg-2.png);
+    background-repeat: no-repeat;
+    background-position: center center, left bottom;
+    background-origin: border-box;
 }
