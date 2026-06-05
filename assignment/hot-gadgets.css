@@ -1,8 +1,9 @@
-body{
+/* body{
     padding: 0 70px;
-}
+} */
 .container{
     margin-bottom: 100px;
+    padding: 0 70px;
 }
 .navbar{
     padding: 10px 30px;
@@ -134,5 +135,5 @@ body{
     background-image: url(Images/hot-gadgets/bg-1.png), url(Images/hot-gadgets/bg-2.png);
     background-repeat: no-repeat;
     background-position: center center, left bottom;
-    background-origin: border-box;
+    background-origin: border-box, border-box;
 }
