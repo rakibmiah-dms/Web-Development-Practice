@@ -1,5 +1,5 @@
 .section-margin{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .bg{
     background: #F0FFF0;
@@ -62,4 +62,40 @@ header img{
 .s-course-item{
     background: #FFFFFF;
     box-shadow: 0px 20px 40px 0px #0000001A;
+}
+.card{
+    width: 360px;
+    height: 483px;
+    border-radius: 18px;
+    box-shadow: 0px 10px 40px 0px #0000001A;
+    border: none;
+}
+.card-heading{
+    font-weight: 700;
+    font-size: 36px;
+    color: #413960;
+}
+.card-img{
+    width: 331px;
+    height: 234px;
+    border-radius: 11px;
+}
+.card-img img{
+    width: 100%;
+}
+.card-body h5{
+    font-weight: 500;
+    font-size: 24px;
+}
+.card-body p{
+    font-weight: 400;
+    font-size: 16px;
+}
+.card-buttom p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.footer-bg{
+    background: #282531;
+    color: white;
 }
