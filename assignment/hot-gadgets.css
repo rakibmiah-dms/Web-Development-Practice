@@ -136,4 +136,5 @@
     background-repeat: no-repeat;
     background-position: center center, left bottom;
     background-origin: border-box, border-box;
+    background-size: auto, 150px 100px;
 }
