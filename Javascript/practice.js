@@ -77,3 +77,97 @@ function myFunction(fNum1, fNum2){
 }
 var sum = myFunction(30, 50);
 console.log(sum);
+
+var inchToFeetConvert = 'Inch to feet convert';
+console.log(inchToFeetConvert);
+
+function inchToFeet(inch){
+    var feet = inch/12;
+    return feet;
+}
+
+var myHeight = inchToFeet(68);
+console.log(myHeight);
+
+var myFriendHeight = inchToFeet(72);
+console.log(myFriendHeight);
+
+const leapY = "check the year is leap year or not";
+console.log(leapY);
+
+function isLeapYear(year){
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+}
+console.log(isLeapYear(2000));
+console.log(isLeapYear(1700));
+
+
+
+console.log('factorial practice by for loop')
+
+var forFactorial2 = 1;
+for(var i = 1; i <= 10; i++){
+    forFactorial2 = forFactorial2 *i;
+    console.log(i, forFactorial2)
+}
+
+
+function forFactorial(forFacNum){
+    var forFactorial = 1;
+    for(var i = 1; i < forFacNum; i++){
+        forFactorial = forFactorial *i;
+    }
+    return forFactorial;
+}
+console.log(forFactorial(10))
+
+
+console.log('factorial practice by while loop')
+
+var i = 1;
+var whileFactorial2 = 1;
+while(i <= 10){
+    whileFactorial2 = whileFactorial2 * i;
+    i++;
+    console.log(i, whileFactorial2)
+}
+
+function whileFactorial(WhileFacNum){
+    var i = 1;
+    whileFactorial = 1;
+    while(i <= WhileFacNum){
+        whileFactorial = whileFactorial * i;
+        i++;
+    }
+    return whileFactorial;
+}
+console.log(whileFactorial(10));
+
+console.log('factorial practice by recursive')
+
+function factorial(n){
+    if(n == 0){
+        return 1;
+    }
+    else{
+        return n * factorial(n - 1);
+    }
+}
+console.log(factorial(7));
+
+console.log('fibonacci practice')
+
+var fibo2 = [0, 1];
+for(i = 2; i < 10; i++){
+    fibo2[i] = fibo2[i - 1] + fibo2[ i - 2];
+    console.log(fibo2[i], fibo2);
+}
+
+function fibo(n){
+    var fibo = [0, 1];
+    for(i = 2; i <= n; i++){
+        fibo[i] = fibo[i - 1] + fibo[ i - 2];
+    }
+    return fibo;
+}
+console.log(fibo(5),);
