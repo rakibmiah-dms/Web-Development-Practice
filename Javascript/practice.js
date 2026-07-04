@@ -170,4 +170,97 @@ function fibo(n){
     }
     return fibo;
 }
-console.log(fibo(5),);
+console.log(fibo(5));
+
+function fibonacci(n){
+    if(n == 0){
+        return 0;
+    }
+    else if(n == 1){
+        return 1;
+    }
+    else{
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+}
+console.log(fibonacci(10))
+
+console.log('Swap practice')
+var a = 5;
+var b = 7;
+console.log('before swap: a =', a, 'b =', b)
+var temp = a;
+var a = b;
+var b = temp;
+console.log('after swap: a =', a, 'b =', b)
+
+var x = 5;
+var y = 7;
+console.log('before swap: x =', x, 'y =', y)
+var x = x + y;
+var y = x - y;
+var x = x - y;
+console.log('after swap: x =', x, 'y =', y)
+
+var p = 5;
+var q = 7;
+// console.log('before swap: p =', p, 'q =', q)
+[p, q] = [q, p]
+console.log('after swap: p =', p, 'q =', q)
+
+
+console.log('Find the largest element & sum of an array')
+var marks = [209, 388, 847, 249, 278, 3749, 584, 28940, 48492, 209, 249, 584];
+var max = marks[0];
+
+for(i = 0; i < marks.length; i++){
+    var element = marks[i];
+    if(element > max){
+        max = element;
+    }
+}
+console.log('the highest valu is:', max)
+
+function getArraySum(marks){
+    var sum = 0;
+    for(i = 0; i < marks.length; i++){
+        var element = marks[i];
+        sum = sum + element;
+    }
+    return sum;
+}
+
+console.log('the sum is:', getArraySum(marks))
+
+var uniqueMarks = [];
+for(i = 0; i < marks.length; i++){
+    var element = marks[i];
+    var index = uniqueMarks.indexOf(element);
+    if(index == -1){
+        uniqueMarks.push(element);
+    }
+}
+console.log(uniqueMarks)
+
+
+console.log('word count practice')
+var speech = 'i am Rakib Miah. i work as a SEO expert at Nextlab.'
+var count = 0;
+
+for(var i = 0; i < speech.length; i++){
+    if(speech[i] == " " && speech[i-1] !== " "){
+        count++
+    }
+}
+count++
+console.log(count);
+
+function reverseString(speech){
+    var reverse = "";
+    for(i = 0; i < speech.length; i++){
+        var char = speech[i];
+        reverse = char + reverse;
+    }
+    return reverse;
+}
+console.log(reverseString(speech));
