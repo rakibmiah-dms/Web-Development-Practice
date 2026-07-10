@@ -39,13 +39,10 @@ console.log('Total Wood Required =', woodCalculator(14, 5, 12))
 
 function brickCalculator(floor){
     const firstTenFloor = 10;
-    firstTenFloorFeet = 15;
-
-
     secondTenFloor = 20;
+
+    firstTenFloorFeet = 15;
     secondTenFloorFeet = 12;
-
-
     otherFloorFeet = 10;
 
     preOneFeet = 1000;
@@ -57,7 +54,7 @@ function brickCalculator(floor){
         var totalfeet = (floor - firstTenFloor) * secondTenFloorFeet + firstTenFloor * firstTenFloorFeet;
     }
     else{
-        var totalfeet = (floor - secondTenFloor) * otherFloorFeet + secondTenFloor * secondTenFloorFeet;
+        var totalfeet = (floor - secondTenFloor) * otherFloorFeet + (secondTenFloor - firstTenFloor) * secondTenFloorFeet + firstTenFloor * firstTenFloorFeet;
     }
     return totalfeet;
 }
@@ -66,7 +63,16 @@ console.log('Total Building Feet =', brickCalculator(47), '& Need Total Bricks =
 
 
 // tinyFriend
-// var feet = 43;
+// find out the little name from ararry
 
 
-
+function tinyFriend(name){
+    var minName = name[0];
+    for(var i = 1; i < name.length; i++){
+        if(name[i].length < minName.length){
+            minName = name[i];
+        }
+    }
+    return minName;
+}
+console.log('The smallest name is:', tinyFriend(['rakib', 'sakibul', 'hasibullah', 'rofikur']));
