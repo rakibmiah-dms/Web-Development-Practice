@@ -107,7 +107,7 @@ console.log('factorial practice by for loop')
 
 var forFactorial2 = 1;
 for(var i = 1; i <= 10; i++){
-    forFactorial2 = forFactorial2 *i;
+    forFactorial2 = forFactorial2 * i;
     console.log(i, forFactorial2)
 }
 
@@ -115,7 +115,7 @@ for(var i = 1; i <= 10; i++){
 function forFactorial(forFacNum){
     var forFactorial = 1;
     for(var i = 1; i < forFacNum; i++){
-        forFactorial = forFactorial *i;
+        forFactorial = forFactorial * i;
     }
     return forFactorial;
 }
