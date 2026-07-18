@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bank - You can deposit and withdraw your memory</title>
+    <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/my-bank.css">
+    
 </head>
 <body>
-    
+    <section id="login-area">
+        <h1 class="text-center">Welcome to My Bank</h1>
+        <div class="submit-area">
+            <h4 class="mb-3">Login</h4>
+            <input type="text" class="form-control" placeholder="Email"><br>
+            <input type="password" name="" class="form-control" placeholder="password"><br>
+            <button id="login-btn" class="btn btn-success">Enter</button>
+        </div>
+    </section>
+    <section id="transaction-area" >
+        <div class="row balance-sheet">
+            <div class="col-md-4">
+                <div class="deposit rounded-4 p-3 mx-3 text-white">
+                    <h5>Deposit</h5>
+                    <p class="fs-1">$ <span id="current-deposit">00</span></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw rounded-4 p-3 mx-3 text-white">
+                    <h5>withdraw</h5>
+                    <p class="fs-1">$00</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance rounded-4 p-3 mx-3 text-white">
+                    <h5>Balance</h5>
+                    <p class="fs-1">$1200</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+               <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input id="deposit-amount" class="form-control" type="text" placeholder="$ amount you want to deposit"><br>
+                    <button id="add-deposit" class="btn btn-success">Deposit</button>
+               </div>
+            </div>
+            <div class="col-md-6 login-details">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <input class="form-control" type="text" placeholder="$ amount you want to withdraw"><br>
+                    <button class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../Javascript/my-bank.js"></script>
 </body>
 </html>
