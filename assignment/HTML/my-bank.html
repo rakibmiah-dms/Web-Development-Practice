@@ -29,13 +29,13 @@
             <div class="col-md-4">
                 <div class="withdraw rounded-4 p-3 mx-3 text-white">
                     <h5>withdraw</h5>
-                    <p class="fs-1">$00</p>
+                    <p class="fs-1">$ <span id="current-withdraw">00</span></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="balance rounded-4 p-3 mx-3 text-white">
                     <h5>Balance</h5>
-                    <p class="fs-1">$1200</p>
+                    <p class="fs-1">$ <span id="current-balance">1200</span></p>
                 </div>
             </div>
         </div>
@@ -50,8 +50,8 @@
             <div class="col-md-6 login-details">
                 <div class="submit-area">
                     <h4>Withdraw</h4>
-                    <input class="form-control" type="text" placeholder="$ amount you want to withdraw"><br>
-                    <button class="btn btn-success">Withdraw</button>
+                    <input id="withdraw-amount" class="form-control" type="text" placeholder="$ amount you want to withdraw"><br>
+                    <button id="add-withdraw" class="btn btn-success">Withdraw</button>
                 </div>
             </div>
         </div>
